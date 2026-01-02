@@ -168,7 +168,7 @@ export async function POST(request: NextRequest) {
 
     // Google Apps Script URL - this will update the Google Sheet
     const APPS_SCRIPT_URL =
-      "https://script.google.com/macros/s/AKfycbxaqGslYRPOdB6F1v8akEGzn4IHpZ8AuV_-1ZqOnjUf5PdgJe7W3XAqyrQx9qZ4LuTw6A/exec";
+      "https://script.google.com/macros/s/AKfycbyZIgkCmIl4Ba8Ru1VFLwjtfuq6ED-Go4IStAuXFSX-JWhjhv6r7kBlUy2VTPyojrfCew/exec";
 
     // Forward the request to Google Apps Script (which updates the sheet)
     const response = await fetch(APPS_SCRIPT_URL, {

@@ -2,8 +2,8 @@
   {
     "teamId": 1,
     "teamName": "Proactive Squad",
-    "isEvaluated": false,
-    "isUpdated": false
+    "isEvaluated": true,
+    "isUpdated": true
   },
   {
     "teamId": 2,
@@ -14,7 +14,7 @@
   {
     "teamId": 3,
     "teamName": "HUFFLEPUFF TECH",
-    "isEvaluated": false,
+    "isEvaluated": true,
     "isUpdated": false
   },
   {
@@ -384,8 +384,20 @@
     "isUpdated": false
   },
   {
-    "teamId": 65,
-    "teamName": "Dream Crew",
+    "teamId": 66,
+    "teamName": "Platypus",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 67,
+    "teamName": "Team CSBS",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 68,
+    "teamName": "Team Harsha",
     "isEvaluated": false,
     "isUpdated": false
   }

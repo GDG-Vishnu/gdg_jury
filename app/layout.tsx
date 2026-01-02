@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "GDG VITB JURY ",
@@ -34,7 +35,7 @@ export default function RootLayout({
           fontFamily: "'Google Sans', sans-serif",
         }}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

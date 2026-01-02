@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import * as z from "zod";
+import { useAuth } from "@/context/AuthContext";
+import toast, { Toaster } from "react-hot-toast";
 
 // Form validation schema
 const loginSchema = z.object({
@@ -19,10 +21,11 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
+  const { login } = useAuth();
   const data = [
     {
       name: "John Doe 1",
-      email: "name1@example.com",
+      email: "jury@gdgvitb.in",
       password: "password1236",
     },
     {
@@ -55,14 +58,17 @@ export default function LoginPage() {
       );
 
       if (user) {
-        // Store jury name and redirect to evaluation page
-        localStorage.setItem("juryName", user.name);
+        // Use auth context login and redirect to evaluation page
+        login(user.name);
+        toast.success(`Welcome, ${user.name}!`);
         router.push("/evaluation");
       } else {
+        toast.error("Invalid email or password");
         setError("Invalid email or password");
       }
     } catch (error) {
       console.error("Login error:", error);
+      toast.error("Error during login. Please try again.");
       setError("Error during login. Please try again.");
     }
 
@@ -71,6 +77,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 relative overflow-hidden">
+      <Toaster position="top-right" />
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-black/5 rounded-full blur-3xl"></div>
@@ -267,7 +274,7 @@ export default function LoginPage() {
               disabled={isLoading}
               className="relative w-full flex items-center justify-center gap-2 py-4 px-6 text-base font-semibold rounded-xl text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl hover:shadow-black/20 active:scale-[0.98] overflow-hidden group"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-600 via-red-600 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <span className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
               <span className="relative flex items-center gap-2">
                 {isLoading ? (
                   <>
@@ -318,14 +325,12 @@ export default function LoginPage() {
           {/* Footer */}
           <div className="mt-8 pt-6 border-t border-gray-100">
             <p className="text-center text-xs text-gray-400">
-              GDG  Evaluation Portal
+              GDG Evaluation Portal
             </p>
-        
           </div>
         </div>
 
         {/* Bottom decorative element */}
-                
       </div>
     </div>
   );

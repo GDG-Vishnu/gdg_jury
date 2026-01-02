@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import EvaluationCard from "@/components/evaluationcard";
 import toast, { Toaster } from "react-hot-toast";
+import { useAuth } from "@/context/AuthContext";
 
 interface Team {
   teamId: number;
@@ -13,6 +14,7 @@ interface Team {
 }
 
 export default function Evaluation() {
+  const { isAuthenticated, juryName: authJuryName } = useAuth();
   const [juryName, setJuryName] = useState<string>("");
   const [teams, setTeams] = useState<Team[]>([]);
   const [filteredTeams, setFilteredTeams] = useState<Team[]>([]);
@@ -113,11 +115,11 @@ export default function Evaluation() {
         case "John Doe 1":
           return "https://docs.google.com/spreadsheets/d/1B15bqn-aKbpL_XOrrHP13paLhTyL7v1IkKIdf6_aWEs/edit?usp=sharing";
         case "John Doe 2":
-          return "https://docs.google.com/spreadsheets/d/1adIg4Gec4-Gxv1eQNH3oFub4OyMNBlr7Cydw_hcQ9Kw/edit?usp=sharing";
+          return "https://docs.google.com/spreadsheets/d/1zvVWTPXi17hF79Ufp-VaNZVc-DNr0WUBzaaSRrq0lnU/edit?usp=sharing  ";
         case "John Doe 3":
           return "https://docs.google.com/spreadsheets/d/1Dbb5ujiWrNZ93YAl4rvx5AZ7nmclsIgHyFzGvk9ah28/edit?usp=sharing";
         default:
-          return "https://docs.google.com/spreadsheets/d/1B15bqn-aKbpL_XOrrHP13paLhTyL7v1IkKIdf6_aWEs/edit?usp=sharing";
+          return "https://docs.google.com/spreadsheets/d/19HAJOBfvGeyqy-EF8-0JDqMsiLV7kfBAnsfux2Dwf8E/edit?usp=sharing";
       }
     };
 
@@ -187,12 +189,11 @@ export default function Evaluation() {
   };
 
   useEffect(() => {
-    const name = localStorage.getItem("juryName");
-    if (name) {
-      setJuryName(name);
-      fetchTeams(name);
+    if (authJuryName) {
+      setJuryName(authJuryName);
+      fetchTeams(authJuryName);
     }
-  }, []);
+  }, [authJuryName]);
 
   return (
     <div className="min-h-screen bg-transparent flex flex-col lg:flex-row px-2 sm:px-4 lg:px-6 xl:px-8 py-4 gap-4">
@@ -332,7 +333,12 @@ export default function Evaluation() {
               onClick={handleEvaluate}
               className="border-2 border-black rounded-2xl p-3 sm:p-4 flex justify-center items-center text-stone-900 font-medium bg-stone-500 hover:text-yellow-400 hover:bg-stone-900 cursor-pointer transition-all duration-200 transform hover:scale-105 active:scale-95 text-sm sm:text-base"
             >
-              Evaluate
+              <span>Evaluate</span>
+              {selectedTeam && (
+                <span className="ml-2 inline-block rounded bg-white/20 px-2 py-0.5 text-sm">
+                  ID: {selectedTeam.teamId}
+                </span>
+              )}
             </div>
           </div>
         </div>
