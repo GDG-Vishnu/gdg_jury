@@ -1,0 +1,392 @@
+[
+  {
+    "teamId": 1,
+    "teamName": "Proactive Squad",
+    "isEvaluated": true,
+    "isUpdated": false
+  },
+  {
+    "teamId": 2,
+    "teamName": "Souryangas",
+    "isEvaluated": true,
+    "isUpdated": false
+  },
+  {
+    "teamId": 3,
+    "teamName": "HUFFLEPUFF TECH",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 4,
+    "teamName": "Hackwarts",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 5,
+    "teamName": "Buntyy",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 6,
+    "teamName": "Codewarts",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 7,
+    "teamName": "INNOVATORS",
+    "isEvaluated": true,
+    "isUpdated": false
+  },
+  {
+    "teamId": 8,
+    "teamName": "Gryffindor 2.0",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 9,
+    "teamName": "N5N - X",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 10,
+    "teamName": "Quad coders",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 11,
+    "teamName": "The Warriors",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 12,
+    "teamName": "Unanimous Hackers",
+    "isEvaluated": true,
+    "isUpdated": false
+  },
+  {
+    "teamId": 13,
+    "teamName": "Repos",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 14,
+    "teamName": "CODE WRITERS",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 15,
+    "teamName": "Team Hackwarts",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 16,
+    "teamName": "Codestorm",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 17,
+    "teamName": "Reloded-3.0",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 18,
+    "teamName": "GarudaVega",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 19,
+    "teamName": "Quad Squad",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 20,
+    "teamName": "404 VYUHAM",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 21,
+    "teamName": "TEAM TARS",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 22,
+    "teamName": "QUERY CREW",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 23,
+    "teamName": "PHOENIX",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 24,
+    "teamName": "Team AI",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 25,
+    "teamName": "Harry",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 26,
+    "teamName": "CodeStorm",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 27,
+    "teamName": "Hogwarts Hackers",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 28,
+    "teamName": "HumanCode",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 29,
+    "teamName": "Dream Crew",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 30,
+    "teamName": "Recursive Rebels",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 31,
+    "teamName": "VIREON",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 32,
+    "teamName": "Agile Avengers",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 33,
+    "teamName": "GryffinCode",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 34,
+    "teamName": "Slouch busters",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 35,
+    "teamName": "TeamXSpark",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 36,
+    "teamName": "Logic Legends",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 37,
+    "teamName": "Quiet Force",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 38,
+    "teamName": "Debugging wizards",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 39,
+    "teamName": "Four Wizards",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 40,
+    "teamName": "Code Wizards",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 41,
+    "teamName": "Idea Flux",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 42,
+    "teamName": "Winter",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 43,
+    "teamName": "Magic Coders",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 44,
+    "teamName": "TEAM LEGENDS",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 45,
+    "teamName": "Phronesis",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 46,
+    "teamName": "Ravenclaw",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 47,
+    "teamName": "Code Nexus",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 48,
+    "teamName": "Gryffindor",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 49,
+    "teamName": "Team Elites",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 50,
+    "teamName": "The Phantom Troupe",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 51,
+    "teamName": "Hacktivators",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 52,
+    "teamName": "WandWeb",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 53,
+    "teamName": "Code Crafters",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 54,
+    "teamName": "TEAM D",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 55,
+    "teamName": "TEAM DRAGON",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 56,
+    "teamName": "Phoenix Flare",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 57,
+    "teamName": "TECH BUILDERS",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 58,
+    "teamName": "LORD VOLDEMORT",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 59,
+    "teamName": "CODE CRAFTERS",
+    "isEvaluated": true,
+    "isUpdated": false
+  },
+  {
+    "teamId": 60,
+    "teamName": "techSparks",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 61,
+    "teamName": "HackWizards",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 62,
+    "teamName": "Innovexa",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 63,
+    "teamName": "RiseUP",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 64,
+    "teamName": "Formula 4",
+    "isEvaluated": false,
+    "isUpdated": false
+  },
+  {
+    "teamId": 65,
+    "teamName": "Dream Crew",
+    "isEvaluated": false,
+    "isUpdated": false
+  }
+]
