@@ -195,6 +195,8 @@ export default function Evaluation() {
     }
   }, [authJuryName]);
 
+
+  
   return (
     <div className="min-h-screen bg-transparent flex flex-col lg:flex-row px-2 sm:px-4 lg:px-6 xl:px-8 py-4 gap-4">
       <div className="w-full lg:w-auto lg:min-w-[320px] xl:min-w-[400px]">

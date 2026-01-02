@@ -24,19 +24,19 @@ export default function LoginPage() {
   const { login } = useAuth();
   const data = [
     {
-      name: "John Doe 1",
-      email: "jury@gdgvitb.in",
-      password: "password1236",
+      name: "JURY 1",
+      email: "jury1@hackatron.vitb.in",
+      password: "r4nd0mP@ss1",
     },
     {
-      name: "John Doe 2",
-      email: "name2@example.com",
-      password: "password1235",
+      name: "JURY 2",
+      email: "jury2@hackatron.vitb.in",
+      password: "r4nd0mP@ss2",
     },
     {
-      name: "John Doe 3",
-      email: "name3@example.com",
-      password: "password1234",
+      name: "JURY 3",
+      email: "jury3@hackatron.vitb.in",
+      password: "r4nd0mP@ss3",
     },
   ];
   const {
