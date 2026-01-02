@@ -112,24 +112,23 @@ export default function Evaluation() {
     // Function to get sheet link based on jury name
     const getSheetLink = (name: string) => {
       switch (name) {
-        case "John Doe 1":
+        case "JURY 1":
           return "https://docs.google.com/spreadsheets/d/1B15bqn-aKbpL_XOrrHP13paLhTyL7v1IkKIdf6_aWEs/edit?usp=sharing";
-        case "John Doe 2":
-          return "https://docs.google.com/spreadsheets/d/1zvVWTPXi17hF79Ufp-VaNZVc-DNr0WUBzaaSRrq0lnU/edit?usp=sharing  ";
-        case "John Doe 3":
+        case "JURY 2":
+          return "https://docs.google.com/spreadsheets/d/1zvVWTPXi17hF79Ufp-VaNZVc-DNr0WUBzaaSRrq0lnU/edit?usp=sharing";
+        case "JURY 3":
           return "https://docs.google.com/spreadsheets/d/1Dbb5ujiWrNZ93YAl4rvx5AZ7nmclsIgHyFzGvk9ah28/edit?usp=sharing";
         default:
-          return "https://docs.google.com/spreadsheets/d/19HAJOBfvGeyqy-EF8-0JDqMsiLV7kfBAnsfux2Dwf8E/edit?usp=sharing";
+          return "https://docs.google.com/spreadsheets/d/1B15bqn-aKbpL_XOrrHP13paLhTyL7v1IkKIdf6_aWEs/edit?usp=sharing";
       }
     };
 
     try {
-      // Prepare data for API
+      // Prepare data for API - format matching Apps Script requirements
       const submissionData = {
-        juryName: juryName || "Anonymous Jury",
+        juryName: juryName || "JURY 1",
         sheetLink: getSheetLink(juryName),
         teamId: selectedTeam.teamId,
-        teamName: selectedTeam.teamName,
         innovation: scores.innovation,
         creativity: scores.creativity,
         technicalImplementation: scores.technicalImplementation,
@@ -195,8 +194,6 @@ export default function Evaluation() {
     }
   }, [authJuryName]);
 
-
-  
   return (
     <div className="min-h-screen bg-transparent flex flex-col lg:flex-row px-2 sm:px-4 lg:px-6 xl:px-8 py-4 gap-4">
       <div className="w-full lg:w-auto lg:min-w-[320px] xl:min-w-[400px]">
@@ -243,9 +240,9 @@ export default function Evaluation() {
               <li key={team.teamId}>
                 <div
                   onClick={() => setSelectedTeam(team)}
-                  className={`p-2 sm:p-3 bg-white border border-black rounded-lg hover:bg-black hover:text-white transition-colors duration-200 cursor-pointer text-black transform hover:scale-105 active:scale-95 ${
+                  className={`p-2 sm:p-3 bg-white border border-black rounded-lg hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-black transform hover:scale-105 active:scale-95 ${
                     selectedTeam?.teamId === team.teamId
-                      ? "bg-black text-white"
+                      ? "bg-black text-black"
                       : ""
                   } ${team.isEvaluated ? "border-green-500 border-2" : ""} ${
                     team.isUpdated ? "border-blue-500 border-2" : ""

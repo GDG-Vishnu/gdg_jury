@@ -25,9 +25,9 @@ const DATA_FILE_PATH = path.join(process.cwd(), "data.json");
 
 // Map jury names to their JSON files
 const JURY_FILE_MAP: { [key: string]: string } = {
-  "John Doe 1": path.join(process.cwd(), "data", "jury1.json"),
-  "John Doe 2": path.join(process.cwd(), "data", "jury2.json"),
-  "John Doe 3": path.join(process.cwd(), "data", "jury3.json"),
+  "JURY 1": path.join(process.cwd(), "data", "jury1.json"),
+  "JURY 2": path.join(process.cwd(), "data", "jury2.json"),
+  "JURY 3": path.join(process.cwd(), "data", "jury3.json"),
 };
 
 // Get the correct file path for a jury
@@ -128,11 +128,10 @@ export async function POST(request: NextRequest) {
     const body: EvaluationData = await request.json();
 
     // Validate required fields
-    if (!body.juryName || !body.sheetLink || !body.teamName || !body.teamId) {
+    if (!body.juryName || !body.sheetLink || !body.teamId) {
       return NextResponse.json(
         {
-          error:
-            "Missing required fields: juryName, sheetLink, teamId, teamName",
+          error: "Missing required fields: juryName, sheetLink, teamId",
         },
         { status: 400 }
       );
@@ -168,7 +167,7 @@ export async function POST(request: NextRequest) {
 
     // Google Apps Script URL - this will update the Google Sheet
     const APPS_SCRIPT_URL =
-      "https://script.google.com/macros/s/AKfycbyZIgkCmIl4Ba8Ru1VFLwjtfuq6ED-Go4IStAuXFSX-JWhjhv6r7kBlUy2VTPyojrfCew/exec";
+      "https://script.google.com/macros/s/AKfycbyBzMcaDXLVU4Ws0WIZUruecP8oe1OowUlIlqBWNERGB4_qEg_EcMmj1xOffhy3PH9FwA/exec";
 
     // Forward the request to Google Apps Script (which updates the sheet)
     const response = await fetch(APPS_SCRIPT_URL, {
@@ -248,7 +247,7 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const juryName = searchParams.get("juryName") || "John Doe 1";
+  const juryName = searchParams.get("juryName") || "JURY 1";
 
   const teams = await fetchTeamsForJury(juryName);
   return NextResponse.json({

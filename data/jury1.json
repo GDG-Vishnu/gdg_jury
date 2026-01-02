@@ -2,8 +2,8 @@
   {
     "teamId": 1,
     "teamName": "Proactive Squad",
-    "isEvaluated": true,
-    "isUpdated": true
+    "isEvaluated": false,
+    "isUpdated": false
   },
   {
     "teamId": 2,
@@ -14,7 +14,7 @@
   {
     "teamId": 3,
     "teamName": "HUFFLEPUFF TECH",
-    "isEvaluated": true,
+    "isEvaluated": false,
     "isUpdated": false
   },
   {
