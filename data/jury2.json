@@ -326,7 +326,7 @@
   {
     "teamId": 55,
     "teamName": "TEAM DRAGON",
-    "isEvaluated": false,
+    "isEvaluated": true,
     "isUpdated": false
   },
   {

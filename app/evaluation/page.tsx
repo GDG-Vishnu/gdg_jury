@@ -87,7 +87,7 @@ export default function Evaluation() {
       (sum, score) => sum + score,
       0
     );
-    const maxPossibleScore = 60; // 15 + 15 + 20 + 10 = 60
+    const maxPossibleScore = 50; // 15 + 15 + 20 + 10 = 60
 
     if (totalScore === 0) {
       toast.error("Please enter scores for at least one criterion!");
@@ -117,7 +117,8 @@ export default function Evaluation() {
         case "JURY 2":
           return "https://docs.google.com/spreadsheets/d/1zvVWTPXi17hF79Ufp-VaNZVc-DNr0WUBzaaSRrq0lnU/edit?usp=sharing";
         case "JURY 3":
-          return "https://docs.google.com/spreadsheets/d/1Dbb5ujiWrNZ93YAl4rvx5AZ7nmclsIgHyFzGvk9ah28/edit?usp=sharing";
+          return "  https://docs.google.com/spreadsheets/d/19HAJOBfvGeyqy-EF8-0JDqMsiLV7kfBAnsfux2Dwf8E/edit?usp=sharing";
+        
         default:
           return "https://docs.google.com/spreadsheets/d/1B15bqn-aKbpL_XOrrHP13paLhTyL7v1IkKIdf6_aWEs/edit?usp=sharing";
       }
