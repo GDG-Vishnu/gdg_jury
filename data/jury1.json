@@ -2,13 +2,13 @@
   {
     "teamId": 1,
     "teamName": "Proactive Squad",
-    "isEvaluated": true,
+    "isEvaluated": false,
     "isUpdated": false
   },
   {
     "teamId": 2,
     "teamName": "Souryangas",
-    "isEvaluated": true,
+    "isEvaluated": false,
     "isUpdated": false
   },
   {
@@ -38,7 +38,7 @@
   {
     "teamId": 7,
     "teamName": "INNOVATORS",
-    "isEvaluated": true,
+    "isEvaluated": false,
     "isUpdated": false
   },
   {
@@ -68,7 +68,7 @@
   {
     "teamId": 12,
     "teamName": "Unanimous Hackers",
-    "isEvaluated": true,
+    "isEvaluated": false,
     "isUpdated": false
   },
   {
@@ -350,7 +350,7 @@
   {
     "teamId": 59,
     "teamName": "CODE CRAFTERS",
-    "isEvaluated": true,
+    "isEvaluated": false,
     "isUpdated": false
   },
   {
