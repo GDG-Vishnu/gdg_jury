@@ -113,7 +113,7 @@ export default function Evaluation() {
     const getSheetLink = (name: string) => {
       switch (name) {
         case "JURY 1":
-          return "https://docs.google.com/spreadsheets/d/1B15bqn-aKbpL_XOrrHP13paLhTyL7v1IkKIdf6_aWEs/edit?usp=sharing";
+          return "https://docs.google.com/spreadsheets/d/1wuX4NQhEF_tkWLlrnoCQmHeHR31DbA2XXYDO7Rm3ryY/edit?usp=sharing";
         case "JURY 2":
           return "https://docs.google.com/spreadsheets/d/1zvVWTPXi17hF79Ufp-VaNZVc-DNr0WUBzaaSRrq0lnU/edit?usp=sharing";
         case "JURY 3":
